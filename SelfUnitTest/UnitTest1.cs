@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace SelfUnitTest
@@ -35,6 +36,16 @@ namespace SelfUnitTest
             var b = 10;
 
             Assert.Equal(30, a * b);
+        }
+
+        [Fact]
+        public void Test5()
+        {
+            var list = new List<string>();
+
+            list.Add("1");
+
+            Assert.Single(list);
         }
     }
 }
