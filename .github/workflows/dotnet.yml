@@ -2,9 +2,9 @@ name: My UnitTest
 
 on:
   push:
-    branches: [ Feature/Create_GitHubAction ]
+    branches: [ develop ]
   pull_request:
-    branches: [ Feature/Create_GitHubAction ]
+    branches: [ develop ]
 
 jobs:
   Build_and_UT:
