@@ -36,5 +36,11 @@ namespace SelfUnitTest
 
             Assert.Equal(30, a * b);
         }
+
+        [Fact(Skip = "This will not test")]
+        public void SkipTest()
+        {
+            Assert.True(false);
+        }
     }
 }
