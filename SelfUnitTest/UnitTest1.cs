@@ -42,5 +42,11 @@ namespace SelfUnitTest
         {
             Assert.True(false);
         }
+
+        [Fact]
+        public void FaulureTest()
+        {
+            Assert.False(true);
+        }
     }
 }
