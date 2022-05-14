@@ -59,5 +59,15 @@ namespace UnitTest
             // Assert
             Assert.Equal(5, result);
         }
+
+        [Fact]
+        public void Test_Add_and_sub_is_correct2()
+        {
+            var servie = new SampleService();
+
+            var result = servie.Sub(servie.Add(10, 5), 12);
+
+            Assert.Equal(3, result);
+        }
     }
 }
