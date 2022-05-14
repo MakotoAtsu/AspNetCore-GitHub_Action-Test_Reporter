@@ -27,5 +27,14 @@ namespace SelfUnitTest
 
             Assert.Throws<Exception>(action);
         }
+
+        [Fact]
+        public void Test4()
+        {
+            var a = 3;
+            var b = 10;
+
+            Assert.Equal(30, a * b);
+        }
     }
 }
